@@ -8,7 +8,6 @@ If you discover a potential security issue:
 
 1. **Do not file a public GitHub Issue.**
 2. Contact Microsoft Security Response Center (MSRC) through the [MSRC portal](https://msrc.microsoft.com/create-report) and include "Snap to AI for Microsoft Azure" in the product field.
-3. Optionally notify the maintainers at `security@snapto.ai` with the MSRC tracking ID.
 
 Please include:
 - A description of the vulnerability and potential impact.
