@@ -83,4 +83,3 @@ body:
       placeholder: |
         [2024-10-01 12:34:56Z] INFO Capture started (monitor=1)
         [2024-10-01 12:35:01Z] ERROR Azure request failed: 429 Too Many Requests
-```
