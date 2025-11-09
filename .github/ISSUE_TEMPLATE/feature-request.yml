@@ -1,0 +1,48 @@
+name: Feature request
+description: Share an idea that would improve Snap to AI for Microsoft Azure
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We appreciate your suggestions! Please describe the scenario clearly so we can evaluate feasibility.
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: Summarise the idea in one sentence
+      placeholder: e.g. Allow exporting conversation history
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Background and problem
+      description: What challenge are you trying to solve?
+      placeholder: Explain the workflow or pain point.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Describe how the product should behave.
+      placeholder: Include UI changes, triggers, or settings if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Have you tried other approaches?
+      placeholder: Optional – useful for prioritisation.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact level
+      options:
+        - Nice to have
+        - Improves productivity
+        - Blocks deployment/rollout
+    validations:
+      required: true

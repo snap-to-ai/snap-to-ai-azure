@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Q&A / Discussions
+    url: https://github.com/snap-to-ai/snap-to-ai-azure/discussions
+    about: Use discussions for open-ended questions or community tips.
+  - name: Security disclosures
+    url: https://msrc.microsoft.com/create-report
+    about: Please report vulnerabilities privately through MSRC.

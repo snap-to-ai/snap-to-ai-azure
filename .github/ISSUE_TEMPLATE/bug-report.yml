@@ -1,0 +1,87 @@
+name: Bug report
+description: Report a reproducible defect in Snap to AI for Microsoft Azure
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve Snap to AI for Microsoft Azure.
+        Please search existing issues before filing a new report.
+  - type: dropdown
+    id: build_channel
+    attributes:
+      label: Where did you install the app?
+      options:
+        - Microsoft Store (production)
+        - Microsoft Store (install-test pre-release)
+        - Developer override build
+        - Other (describe below)
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Settings → About → Version
+      placeholder: e.g. 1.0.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows edition & build number
+      description: Win + R → `winver`
+      placeholder: e.g. Windows 11 Pro 23H2 (22631.2428)
+    validations:
+      required: true
+  - type: dropdown
+    id: azure_endpoint
+    attributes:
+      label: Azure endpoint type
+      options:
+        - Azure OpenAI
+        - Azure AI Foundry (Azure AI Services)
+        - Not yet configured
+    validations:
+      required: true
+  - type: textarea
+    id: network_environment
+    attributes:
+      label: Network environment
+      description: Proxy, firewall allowlist, VPN, or other relevant restrictions
+      placeholder: Describe network constraints or enter "None".
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide numbered steps that consistently trigger the issue
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected result
+      description: What you thought should happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual result
+      description: What happened instead (include error messages or screenshots if available)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpts
+      description: Attach or paste sanitized lines from %LocalAppData%\SnapToAIForMicrosoftAzure\SnapToAIForMicrosoftAzure.log (remove secrets before sharing)
+      placeholder: |
+        ```text
+        <log lines>
+        ```
+```
