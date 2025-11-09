@@ -9,6 +9,11 @@ This guide lists common issues and recommended recovery steps.
 | Interactive login window fails to open | Confirm system webview is functional. Run `wsreset.exe` and reboot. Corporate devices may need Edge WebView2 runtime. |
 | Account question during sign-in | Azure policies (MFA, conditional access) must be satisfied. Check with your administrator. |
 
+## Consent Prompt Warning
+| Symptom | Resolution |
+| --- | --- |
+| Consent screen shows "Publisher: unverified" | Snap to AI for Microsoft Azure is shipped without a Verified Publisher badge. Verification demands owning and maintaining a custom domain and completing Partner Center enrollment, which are out of scope for this individual project. Review the requested permissions and tenant-owned app ID (`6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3`); once confirmed, administrators can safely grant consent. |
+
 ## Connection Tests
 | Symptom | Resolution |
 | --- | --- |
