@@ -81,7 +81,7 @@ body:
       label: Relevant log excerpts
       description: Attach or paste sanitized lines from %LocalAppData%\SnapToAIForMicrosoftAzure\SnapToAIForMicrosoftAzure.log (remove secrets before sharing)
       placeholder: |
-        ```text
-        <log lines>
-        ```
+        Example:
+          [2024-10-01 12:34:56Z] INFO Capture started (monitor=1)
+          [2024-10-01 12:35:01Z] ERROR Azure request failed: 429 Too Many Requests
 ```
