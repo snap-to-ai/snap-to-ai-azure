@@ -1,57 +1,43 @@
 # Snap to AI for Microsoft Azure Support
 
-Snap to AI for Microsoft Azure delivers an instant screenshot interpretation experience on Windows 11. This public repository hosts user-facing documentation, issue templates, and the discussion channel for the Microsoft Store build of the app. All product code stays in a private repository and is synchronized here via automation.
+Snap to AI for Microsoft Azure is a Windows 11 companion that turns a screen selection into an instant AI explanation. This repository collects the user-facing guidance, troubleshooting tips, and support entry points for the Microsoft Store build.
 
-## Highlights
-- **One-step capture to insight**: draw a rectangle, receive an Azure AI or Azure OpenAI response instantly.
-- **Conversation-ready popup**: follow up with additional prompts without leaving the overlay.
-- **Enterprise-ready**: Entra ID sign-in, bring-your-own Azure endpoint, and documented network allowlists.
+## What you get
+- **One-step capture to insight** – drag a rectangle and receive an Azure AI or Azure OpenAI response right away.
+- **Conversation-ready popup** – continue the discussion directly inside the overlay without switching windows.
+- **Enterprise-friendly setup** – sign in with Microsoft Entra ID, use your own Azure endpoint, and follow documented allowlists when needed.
 
-## Before You Install
-You need the following Azure prerequisites before the Microsoft Store build can analyze screenshots:
+## Prepare your Azure environment
+Make sure the following items are in place before you install the app:
 
-1. **Azure resource is ready** – provision either an Azure OpenAI resource (`*.openai.azure.com`) or an Azure AI Foundry project (`*.services.ai.azure.com`).
-2. **Role assignment for every user** – in the Azure portal, open the resource (or its resource group/subscription) → **Access control (IAM)** → **Add role assignment** → grant:
-	- `Cognitive Services OpenAI User` for Azure OpenAI, or
-	- `Azure AI Developer` (preferred) / `Cognitive Services OpenAI User` for Azure AI Foundry.
-	Assign the individual user or a group that contains the user who will run the app.
-3. **Create the enterprise app instance** – an administrator must create the service principal for client ID `6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3`. Because this app is not listed in the Microsoft gallery, the supported options are:
-	- Open `https://login.microsoftonline.com/<tenantId>/adminconsent?client_id=6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3&redirect_uri=http://localhost` and approve the requested permissions (recommended).
-	- Or run an administrative command such as `az ad sp create --id 6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3` (Azure CLI) / `New-MgServicePrincipal -AppId 6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3` (Microsoft Graph PowerShell) to create the service principal, then grant admin consent in the portal.
-		After the service principal exists, the enterprise application named “SnapToAIforMicrosoftAzure” appears under **Microsoft Entra ID > Enterprise applications**, where you can scope assignments if required.
-4. **Collect connection values** – the Settings window requires:
-	- **Endpoint**: the full resource endpoint, for example `https://contoso.openai.azure.com/` (Azure OpenAI) or `https://contoso.services.ai.azure.com/` (Azure AI Foundry hosting may still surface `*.openai.azure.com`; formats can evolve).
-	- **Deployment name / Model ID**: the deployment identifier configured in Azure. Foundry uses the model ID.
-	- **API version**: only for Azure OpenAI. Use `2024-12-01-preview` or newer; older versions are rejected by the app.
-	Keep these values handy for first launch.
-5. **Optional: allowlist network endpoints** – if your environment restricts outbound traffic, ensure the hosts documented in `docs/network-allowlist.md` are reachable.
+1. **Provision the resource** – create either an Azure OpenAI resource (`*.openai.azure.com`) or an Azure AI Foundry project (`*.services.ai.azure.com`).
+2. **Assign the role** – grant each user (or their Azure AD group) either `Cognitive Services OpenAI User` or `Azure AI Developer` on the resource, resource group, or subscription.
+3. **Create the enterprise application** – have an administrator consent to client ID `6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3` so that “SnapToAIforMicrosoftAzure” appears under **Microsoft Entra ID > Enterprise applications**.
+4. **Collect connection values** – keep the endpoint URL, deployment name or model ID, and (for Azure OpenAI) the API version `2024-12-01-preview` or newer.
+5. **Optional: review network access** – confirm any outbound firewall rules allow the hosts listed in `docs/network-allowlist.md`.
 
-## Getting Started
-1. Install the app from the Microsoft Store (listing link will be published at launch).
-2. Launch the app. The Settings window opens automatically until Azure settings are saved.
-3. Sign in with your Microsoft Entra work or school account. Interactive sign-in launches if a silent token cannot be retrieved.
-4. Enter the endpoint, deployment, and (if applicable) API version you collected earlier, then choose **Save**.
-5. In **Settings → Azure**, select **Test Connection**. The test sends a white 100×100 PNG; a `true` response confirms role, consent, and network configuration.
-6. Close Settings. Trigger a capture with `Ctrl` + `Shift` + `Space`, drag a rectangle, and review the AI-generated interpretation. Use **Copy**, **Refresh**, or type follow-up prompts inside the popup.
+## Set up in five steps
+1. Install the Microsoft Store build once the listing is available.
+2. Launch the app; the Settings window stays open until the Azure tab is configured.
+3. Sign in with your Microsoft Entra work or school account.
+4. Enter the endpoint, deployment/model ID, and API version (if required), then select **Save**.
+5. Run **Settings → Azure → Test Connection** and, once successful, start capturing with `Ctrl` + `Shift` + `Space`.
 
-More detailed guidance is available under [`docs/`](docs/).
+For screenshots and full walkthroughs, see [`docs/quickstart.md`](docs/quickstart.md).
 
 ## Documentation
-- [`docs/quickstart.md`](docs/quickstart.md): full installation, Azure preparation, and onboarding checklist.
-- [`docs/troubleshooting.md`](docs/troubleshooting.md): common errors and how to capture logs.
-- [`docs/data-collection.md`](docs/data-collection.md): what telemetry we store and how support handles log files.
-- [`docs/network-allowlist.md`](docs/network-allowlist.md): outbound firewall exceptions to allow.
+- [`docs/quickstart.md`](docs/quickstart.md): complete installation and onboarding guide.
+- [`docs/troubleshooting.md`](docs/troubleshooting.md): common issues and log collection.
+- [`docs/data-collection.md`](docs/data-collection.md): telemetry coverage and support handling.
+- [`docs/network-allowlist.md`](docs/network-allowlist.md): outbound host list for restricted networks.
 
-## Support & Feedback
-Please use GitHub Issues in this repository for public support requests:
-- Choose **Bug report** for defects and include reproduction steps, screenshots, and logs.
-- Choose **Feature request** for improvement ideas or usability feedback.
-- Security-sensitive reports should follow the instructions in [`SECURITY.md`](SECURITY.md).
+## Support & feedback
+Open a GitHub Issue in this repository when you need help:
+- **Bug report** – provide steps, screenshots, and logs.
+- **Feature request** – propose usability improvements or new scenarios.
+- Follow [`SECURITY.md`](SECURITY.md) for security disclosures.
 
-We aim to respond within three business days. Responses may require scheduling follow-up sessions if subscription/tenant configuration checks are needed.
-
-## Repository Structure & Automation
-This repository is synchronized from the private development repository under the `docs/public/repo/` directory. Changes originate there, undergo internal review, and are published here by GitHub Actions (`.github/workflows/sync-public.yml`). Direct pull requests are welcome but may be merged via the private repo to maintain a single source of truth.
+We aim to reply within three business days. Follow-up sessions may be scheduled if tenant or subscription checks are required.
 
 ## License
-The documentation in this repository is provided under the same license as the application. See [`LICENSE`](LICENSE) for details.
+The documentation in this repository is distributed under the Snap to AI for Microsoft Azure Proprietary Notice. The full text is available in [`LICENSE`](LICENSE).
