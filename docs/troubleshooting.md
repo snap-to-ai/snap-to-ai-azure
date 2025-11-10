@@ -19,7 +19,7 @@ This guide lists common issues and recommended recovery steps.
 | --- | --- |
 | Test Connection returns HTTP 401/403 | Verify endpoint URL, deployment name, and API version. Ensure the signed-in account is assigned the correct Azure role. |
 | HTTP 429 or 503 errors | The Azure resource is throttled. Review Azure metrics and increase capacity or reduce load. |
-| Proxy or firewall failures | Confirm required FQDNs are allowlisted: `*.openai.azure.com`, `*.services.ai.azure.com`, `login.microsoftonline.com`, `storeedgefd.dsx.mp.microsoft.com`, and `purchase.mp.microsoft.com`. |
+| Proxy or firewall failures | Confirm required FQDNs are allowlisted (see [network-allowlist.md](network-allowlist.md)): `*.openai.azure.com`, `*.services.ai.azure.com`, `login.microsoftonline.com`, `storeedgefd.dsx.mp.microsoft.com`, and `purchase.mp.microsoft.com`. |
 
 ## Capture Workflow
 | Symptom | Resolution |
