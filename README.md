@@ -7,6 +7,11 @@ Snap to AI for Microsoft Azure is a Windows 11 companion that turns a screen sel
 - **Conversation-ready popup** – continue the discussion directly inside the overlay without switching windows.
 - **Enterprise-friendly setup** – sign in with Microsoft Entra ID, use your own Azure endpoint, and follow documented allowlists when needed.
 
+## Subscription model
+- The Microsoft Store build is offered as a monthly subscription so we can deliver continuous security updates and feature improvements.
+- Your subscription also funds the ongoing work needed to track Azure AI / LLM platform changes and keep the capture workflow reliable.
+- A 30-day free trial is available before the first charge; cancel any time to stop future billing.
+
 ## Prepare your Azure environment
 Make sure the following items are in place before you install the app:
 
