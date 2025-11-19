@@ -43,7 +43,7 @@ Open a GitHub Issue in this repository when you need help:
 - **Feature request** – propose usability improvements or new scenarios.
 - Follow [`SECURITY.md`](SECURITY.md) for security disclosures.
 
-We aim to reply within three business days. Follow-up sessions may be scheduled if tenant or subscription checks are required.
+As a solo developer I handle requests on a best-effort basis; a response within **three business days** is the aspirational target so teams can plan, but replies may take longer during busy periods. Follow-up sessions may be scheduled if tenant or subscription checks are required.
 
 ## License
 The documentation in this repository is distributed under the Snap to AI for Microsoft Azure Proprietary Notice. The full text is available in [`LICENSE`](LICENSE).

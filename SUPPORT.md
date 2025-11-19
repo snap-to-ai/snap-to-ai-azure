@@ -20,7 +20,8 @@ Thank you for using Snap to AI for Microsoft Azure. The Microsoft Store build is
 4. Attach logs and anonymised instructions if requested by the template.
 
 ## Response Targets
-- We target an initial response within **3 business days**.
+- Support is provided by a solo developer and handled on a best-effort basis.
+- The aspirational goal is an initial response within **3 business days** so that enterprise teams can plan their next steps, but replies may take longer during heavy workload periods.
 - Complex incidents (e.g., Azure policy conflicts) may require additional follow-up through private channels.
 
 ## Privacy & Sensitive Data

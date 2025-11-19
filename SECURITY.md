@@ -9,7 +9,7 @@ We support both public and private channels. Choose the option that matches the 
 ### GitHub Issue (default)
 1. Open a new Issue using the "Report a security vulnerability" template.
 2. Share a clear description, impact, and sanitized reproduction steps. **Do not include secrets, tenant identifiers, or customer data.**
-3. Monitor the Issue for follow-up questions. We reply to new reports within 3 business days.
+3. Monitor the Issue for follow-up questions. Responses are best-effort and handled by a solo maintainer; the target is to reply within 3 business days, but complex schedules may cause delays.
 
 ### Microsoft Security Response Center (MSRC)
 If sensitive information (e.g., exploit code, customer data, or unpublished infrastructure details) is required, submit the report privately through the [MSRC portal](https://msrc.microsoft.com/create-report) and include "Snap to AI for Microsoft Azure" in the product field. You may optionally reference the GitHub Issue number for easier coordination.
