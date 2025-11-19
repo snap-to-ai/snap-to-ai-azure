@@ -8,7 +8,7 @@ Snap to AI for Microsoft Azure is designed for privacy-conscious enterprise scen
 flowchart LR
 	User((Screen capture & prompt)) -->|1. Select area, enter text| App[Snap to AI desktop client]
 	App -->|2. Persist logs & settings| Local[(Local-only storage)]
-	App -->|3. HTTPS call (image + prompt)| Azure[(Your Azure OpenAI / Azure AI Foundry)]
+	App -->|3. HTTPS call with image and prompt| Azure[(Your Azure OpenAI / Azure AI Foundry)]
 	Azure -->|4. AI response| App
 	App -->|5. Optional sanitized evidence| Support[(Enterprise support channel)]
 ```
