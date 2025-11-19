@@ -33,8 +33,9 @@ For screenshots and full walkthroughs, see [`docs/quickstart.md`](docs/quickstar
 ## Documentation
 - [`docs/quickstart.md`](docs/quickstart.md): complete installation and onboarding guide.
 - [`docs/troubleshooting.md`](docs/troubleshooting.md): common issues and log collection.
-- [`docs/data-collection.md`](docs/data-collection.md): telemetry coverage and support handling.
+- [`docs/data-collection.md`](docs/data-collection.md): end-to-end data flow, telemetry coverage, and support handling.
 - [`docs/network-allowlist.md`](docs/network-allowlist.md): outbound host list for restricted networks.
+- [`docs/firewall-script.md`](docs/firewall-script.md): sample firewall automation script and usage notes (unsupported, best-effort guidance).
 
 ## Support & feedback
 Open a GitHub Issue in this repository when you need help:
