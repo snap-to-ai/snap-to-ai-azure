@@ -13,7 +13,7 @@ This guide walks new users through installing Snap to AI for Microsoft Azure and
    - Azure portal → open the resource (or its resource group / subscription) → **Access control (IAM)** → **Add** → **Add role assignment**.
    - Select one of the following roles and assign the user or group that will run the app:
      - `Cognitive Services OpenAI User` for Azure OpenAI.
-     - `Azure AI Developer` (preferred) or `Cognitive Services OpenAI User` for Azure AI Foundry.
+     - `Azure AI User` for Azure AI Foundry.
    - The assignment may take a few minutes to propagate.
 
 3. **Create the enterprise application instance and grant consent**

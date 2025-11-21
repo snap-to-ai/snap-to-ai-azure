@@ -16,7 +16,7 @@ Snap to AI for Microsoft Azure is a Windows 11 companion that turns a screen sel
 Make sure the following items are in place before you install the app:
 
 1. **Provision the resource** – create either an Azure OpenAI resource (`*.openai.azure.com`) or an Azure AI Foundry project (`*.services.ai.azure.com`).
-2. **Assign the role** – grant each user (or their Azure AD group) either `Cognitive Services OpenAI User` or `Azure AI Developer` on the resource, resource group, or subscription.
+2. **Assign the role** – grant each user (or their Azure AD group) either `Cognitive Services OpenAI User` or `Azure AI User` on the resource, resource group, or subscription.
 3. **Create the enterprise application** – have an administrator consent to client ID `6fbd71ff-01dc-4cb0-bc22-40b8f0188ab3` so that “SnapToAIforMicrosoftAzure” appears under **Microsoft Entra ID > Enterprise applications**.
 4. **Collect connection values** – keep the endpoint URL, deployment name or model ID, and (for Azure OpenAI) the API version `2024-12-01-preview` or newer.
 5. **Optional: review network access** – confirm any outbound firewall rules allow the hosts listed in `docs/network-allowlist.md`.

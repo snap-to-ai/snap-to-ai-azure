@@ -5,7 +5,7 @@ This guide lists common issues and recommended recovery steps.
 ## Sign-in and Authentication
 | Symptom | Resolution |
 | --- | --- |
-| "Authentication required" banner never clears | Sign out from Settings → Account and sign in again. Ensure the account has `Cognitive Services User` or equivalent role on the Azure resource. |
+| "Authentication required" banner never clears | Sign out from Settings → Account and sign in again. Ensure the account has `Cognitive Services User` or `Azure AI User` or equivalent role on the Azure resource. |
 | Interactive login window fails to open | Confirm system webview is functional. Run `wsreset.exe` and reboot. Corporate devices may need Edge WebView2 runtime. |
 | Account question during sign-in | Azure policies (MFA, conditional access) must be satisfied. Check with your administrator. |
 
