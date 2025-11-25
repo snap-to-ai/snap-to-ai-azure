@@ -2,7 +2,7 @@
 #requires -Version 5.1
 <#!
 .SYNOPSIS
-    Registers HTTPS firewall allow rules required by Snap to AI for Microsoft Azure.
+    Registers HTTPS firewall allow rules required by Snap to AI.
 .DESCRIPTION
     Resolves the required FQDNs listed in publish/docs/network-allowlist.md and
     creates outbound TCP/443 allow rules for the resulting IP addresses. Existing rules with
@@ -37,7 +37,7 @@ param(
     [string[]]$AzureOpenAIHost,
     [string[]]$AzureAIFoundryHost,
     [string[]]$AdditionalHosts,
-    [string]$RulePrefix = 'Snap to AI for Microsoft Azure Allowlist',
+    [string]$RulePrefix = 'Snap to AI Allowlist',
     [ValidateRange(1,255)]
     [int]$ChunkSize = 100,
     [switch]$SkipIPv6
@@ -191,7 +191,7 @@ function New-AllowRule {
                 -RemotePort 443 `
                 -RemoteAddress $addressesForRule `
                 -Enabled True `
-                -Description 'Snap to AI for Microsoft Azure flight testing. See publish/docs/network-allowlist.md.' | Out-Null
+                -Description 'Snap to AI flight testing. See publish/docs/network-allowlist.md.' | Out-Null
 
             $result.Add([pscustomobject]@{
                 Rule = $ruleDisplayName

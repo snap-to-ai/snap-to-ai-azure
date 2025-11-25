@@ -1,11 +1,11 @@
 name: Bug report
-description: Report a reproducible defect in Snap to AI for Microsoft Azure
+description: Report a reproducible defect in Snap to AI
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping us improve Snap to AI for Microsoft Azure.
+        Thanks for helping us improve Snap to AI.
         Please search existing issues before filing a new report.
   - type: dropdown
     id: build_channel

@@ -1,6 +1,6 @@
 # Data Collection
 
-Snap to AI for Microsoft Azure is designed for privacy-conscious enterprise scenarios. This document explains what information is stored locally and what may be shared when requesting support.
+Snap to AI is designed for privacy-conscious enterprise scenarios. This document explains what information is stored locally and what may be shared when requesting support.
 
 ## End-to-End Data Flow
 

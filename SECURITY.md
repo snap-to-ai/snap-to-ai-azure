@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-Security fixes are provided for the current Microsoft Store release of Snap to AI for Microsoft Azure. Older sidelines or developer-preview builds are not covered.
+Security fixes are provided for the current Microsoft Store release of Snap to AI. Older sidelines or developer-preview builds are not covered.
 
 ## Reporting a Vulnerability
 We support both public and private channels. Choose the option that matches the sensitivity of your report.
@@ -12,7 +12,7 @@ We support both public and private channels. Choose the option that matches the 
 3. Monitor the Issue for follow-up questions. Responses are best-effort and handled by a solo maintainer; the target is to reply within 3 business days, but complex schedules may cause delays.
 
 ### Microsoft Security Response Center (MSRC)
-If sensitive information (e.g., exploit code, customer data, or unpublished infrastructure details) is required, submit the report privately through the [MSRC portal](https://msrc.microsoft.com/create-report) and include "Snap to AI for Microsoft Azure" in the product field. You may optionally reference the GitHub Issue number for easier coordination.
+If sensitive information (e.g., exploit code, customer data, or unpublished infrastructure details) is required, submit the report privately through the [MSRC portal](https://msrc.microsoft.com/create-report) and include "Snap to AI" in the product field. You may optionally reference the GitHub Issue number for easier coordination.
 
 When contacting us via either channel, please include:
 - A description of the vulnerability and potential impact.

@@ -2,7 +2,7 @@
 
 **Last updated: 2025-11-10**
 
-Snap to AI for Microsoft Azure (the "App") analyzes user-supplied screenshots and chat text using Microsoft Azure AI services. By installing or using the App, you agree to this Privacy Policy.
+Snap to AI (the "App") analyzes user-supplied screenshots and chat text using Microsoft Azure AI services. By installing or using the App, you agree to this Privacy Policy.
 
 ## 1. Data We Collect and Process
 - **Screenshots and chat text**: The App processes only the images and follow-up text that you explicitly submit. Screenshots are converted to Base64 strings in memory immediately before transmission and are sent over HTTPS to the Azure OpenAI or Azure AI Foundry endpoint that you configure. The App does not persist these images or request payloads to disk or share them with third parties.
@@ -40,6 +40,6 @@ We may update this policy to reflect service improvements or legal changes. We w
 
 ## 9. Contact
 - General support: https://github.com/snap-to-ai/snap-to-ai-azure/issues
-- Security reports: https://msrc.microsoft.com/create-report (please enter "Snap to AI for Microsoft Azure" in the product field)
+- Security reports: https://msrc.microsoft.com/create-report (please enter "Snap to AI" in the product field)
 
 If you have questions about this policy or our data practices, please create an issue via the support channel above.

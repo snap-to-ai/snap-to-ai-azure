@@ -1,6 +1,6 @@
 # Support Guide
 
-Thank you for using Snap to AI for Microsoft Azure. The Microsoft Store build is supported through GitHub Issues in this repository. Please review the guidance below before opening a ticket.
+Thank you for using Snap to AI. The Microsoft Store build is supported through GitHub Issues in this repository. Please review the guidance below before opening a ticket.
 
 ## Before You File an Issue
 - Review the [Quickstart](docs/quickstart.md) and [Troubleshooting](docs/troubleshooting.md) guides.

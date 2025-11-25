@@ -24,7 +24,7 @@ The sample script `scripts/Configure-SnapToAIFirewall.ps1` automates the creatio
 3. Review the verbose output. The script removes prior rules with the same prefix, resolves IP addresses, and creates IPv4/IPv6 rules in chunks of up to 100 addresses.
 4. Validate that the new rules exist:
    ```powershell
-   Get-NetFirewallRule -DisplayName "Snap to AI for Microsoft Azure Allowlist*" |
+   Get-NetFirewallRule -DisplayName "Snap to AI Allowlist*" |
        Get-NetFirewallAddressFilter |
        Format-Table -AutoSize
    ```

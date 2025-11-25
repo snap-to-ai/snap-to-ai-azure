@@ -1,6 +1,6 @@
-# Snap to AI for Microsoft Azure Support
+# Snap to AI Support
 
-Snap to AI for Microsoft Azure is a Windows 11 companion that turns a screen selection into an instant AI explanation. This repository collects the user-facing guidance, troubleshooting tips, and support entry points for the Microsoft Store build.
+Snap to AI is a Windows 11 companion that turns a screen selection into an instant AI explanation. This repository collects the user-facing guidance, troubleshooting tips, and support entry points for the Microsoft Store build.
 
 ## What you get
 - **One-step capture to insight** – drag a rectangle and receive an Azure AI or Azure OpenAI response right away.
@@ -46,4 +46,4 @@ Open a GitHub Issue in this repository when you need help:
 As a solo developer I handle requests on a best-effort basis; a response within **three business days** is the aspirational target so teams can plan, but replies may take longer during busy periods. Follow-up sessions may be scheduled if tenant or subscription checks are required.
 
 ## License
-The documentation in this repository is distributed under the Snap to AI for Microsoft Azure Proprietary Notice. The full text is available in [`LICENSE`](LICENSE).
+The documentation in this repository is distributed under the Snap to AI Proprietary Notice. The full text is available in [`LICENSE`](LICENSE).

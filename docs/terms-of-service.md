@@ -2,7 +2,7 @@
 
 **Last updated: 2025-11-10**
 
-These Terms of Service ("Terms") govern your access to and use of Snap to AI for Microsoft Azure (the "App"). By installing or using the App, you agree to be bound by these Terms. If you do not agree, do not install or use the App.
+These Terms of Service ("Terms") govern your access to and use of Snap to AI (the "App"). By installing or using the App, you agree to be bound by these Terms. If you do not agree, do not install or use the App.
 
 ## 1. Eligibility and Accounts
 - You must have a valid Microsoft account or an organizational Entra ID (formerly Azure AD) account to sign in to the App.
@@ -65,6 +65,6 @@ You agree to indemnify and hold harmless the App publisher and its contributors 
 
 ## 14. Contact
 - General support: https://github.com/snap-to-ai/snap-to-ai-azure/issues
-- Security reports: https://msrc.microsoft.com/create-report (enter "Snap to AI for Microsoft Azure" in the product field)
+- Security reports: https://msrc.microsoft.com/create-report (enter "Snap to AI" in the product field)
 
 If you have questions about these Terms, please contact us through the support channel above.

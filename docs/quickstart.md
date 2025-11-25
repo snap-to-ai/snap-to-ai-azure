@@ -1,6 +1,6 @@
 # Quickstart
 
-This guide walks new users through installing Snap to AI for Microsoft Azure and completing the initial configuration.
+This guide walks new users through installing Snap to AI and completing the initial configuration.
 
 ## 1. Prepare Azure (complete before installation)
 
@@ -33,7 +33,7 @@ This guide walks new users through installing Snap to AI for Microsoft Azure and
    - If outbound traffic is filtered, permit the hosts documented in `network-allowlist.md`.
 
 ## 2. Install the App
-- Open the Microsoft Store on Windows 11 and search for **"Snap to AI for Microsoft Azure"**.
+- Open the Microsoft Store on Windows 11 and search for **"Snap to AI"**.
 - Confirm the publisher and click **Get** to install.
 - Launch the app from the Start menu. The Settings window opens automatically when Azure settings are incomplete.
 
