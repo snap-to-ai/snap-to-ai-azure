@@ -17,8 +17,8 @@ Use this template whenever Snap to AI generates content that violates your polic
 - [ ] Privacy or personal data
 - [ ] Other (describe below)
 
-## What happened?
-Describe what the AI produced, what you expected instead, and how we should reproduce it. Include truncated prompts or screenshots if appropriate.
+## What happened? *(screenshot required)*
+Describe what the AI produced, what you expected instead, and how we should reproduce it. **Must include at least one screenshot** (drag-and-drop below) that clearly shows the offending AI output; add truncated prompts or additional images if needed.
 
 ## Auto-collected context
 This section is populated when you open the template from the application. If you opened it manually, please include:
