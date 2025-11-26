@@ -39,3 +39,8 @@ This flow keeps the audit trail required by Microsoft Store certification while 
 
 ## Privacy & Sensitive Data
 Do not upload raw screenshots containing confidential information. Redact or mask sensitive areas before sharing. If you need to provide secure materials, coordinate with us via the contact method listed in [`SECURITY.md`](SECURITY.md).
+
+### Escalating Confidential Material
+- If redaction is impossible (for example, customer data or unmasked logs), open a GitHub Issue first and include the context you can safely share.
+- Then email the sensitive attachment to `snaptoai.helpdesk@gmail.com` with the Issue number in the subject line (e.g., `[#123] Confidential logs`). Email is used only for payload transfer; the discussion and status tracking stay inside the Issue.
+- Security vulnerabilities that include exploit code or tenant secrets should still follow the MSRC workflow described in [`SECURITY.md`](SECURITY.md). Email is optional in that case and only after an MSRC submission ID exists.
