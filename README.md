@@ -8,8 +8,8 @@ Snap to AI is a Windows 11 companion that turns a screen selection into an insta
 - **Enterprise-friendly setup** – sign in with Microsoft Entra ID, use your own Azure endpoint, and follow documented allowlists when needed.
 
 ## Subscription model
-- The Microsoft Store build is offered as a monthly subscription so we can deliver continuous security updates and feature improvements.
-- Your subscription also funds the ongoing work needed to track Azure AI / LLM platform changes and keep the capture workflow reliable.
+- Snap to AI is now a Microsoft Store subscription so we can keep pace with rapidly changing Azure AI / Azure OpenAI APIs and ship compatibility fixes the moment Microsoft updates the platform.
+- Your subscription directly funds the monitoring, testing, and documentation work required to keep the capture workflow reliable while those APIs evolve.
 - A 30-day free trial is available before the first charge; cancel any time to stop future billing.
 
 ## Prepare your Azure environment
