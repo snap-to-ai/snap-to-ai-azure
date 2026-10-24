@@ -1,5 +1,8 @@
 # Snap to AI Support
 
+> [!IMPORTANT]
+> Snap to AI was discontinued on October 20, 2026. It is no longer available in the Microsoft Store and will not receive further updates or support. This repository is archived and kept for reference only.
+
 Snap to AI is a Windows 11 companion that turns a screen selection into an instant AI explanation. This repository collects the user-facing guidance, troubleshooting tips, and support entry points for the Microsoft Store build.
 
 ## What you get
